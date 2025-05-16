@@ -1,14 +1,72 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/css/auth.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="/src/css/auth.css" />
     <title>Auth - UI</title>
 </head>
-<body>
-    
 
-    <script src="/src/js/auth.js"></script>
+<body>
+
+    <section class="auth">
+
+        <form id="form--register" class="form form--register" style="display: none;">
+            <p class="title">Register</p>
+
+            <label>
+                <input class="input" type="text" name="nombre" placeholder=" " />
+                <span>Nombre</span>
+            </label>
+
+            <label>
+                <input class="input" type="text" name="apellido" placeholder=" " />
+                <span>Apellido</span>
+            </label>
+
+            <label>
+                <input class="input" type="email" name="correo" placeholder=" " />
+                <span>Correo electrónico</span>
+            </label>
+
+            <label>
+                <input class="input" type="password" name="clave" placeholder=" " />
+                <span>Contraseña</span>
+            </label>
+
+            <label>
+                <input class="input" type="password" name="confirmar" placeholder=" " />
+                <span>Confirmar contraseña</span>
+            </label>
+
+            <button type="button" id="submit" class="submit">Submit</button>
+            <p id="register" class="signin">Already have an account?. Signin</p>
+        </form>
+
+        <form id="form--login" class="form form--login">
+            <p class="title">Login</p>
+
+            <label>
+                <input class="input" type="email" name="correo" placeholder=" " />
+                <span>Correo electrónico</span>
+            </label>
+
+            <label>
+                <input class="input" type="password" name="clave" placeholder=" " />
+                <span>Contraseña</span>
+            </label>
+
+            <button type="button" class="submit">Login</button>
+            <p id="login" class="signin">Don't have an account?. Register</p>
+        </form>
+    </section>
+
+    <script type="module" src="/src/js/auth.js"></script>
 </body>
+
 </html>
